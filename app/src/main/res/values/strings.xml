@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MIUStoreAndQuiz</string>
+    <string name="msg_quiz">Quiz App</string>
+    <string name="msg_shop">Shop by Categories</string>
+    <string name="shop_category">Shop by categories</string>
+    <string name="books">Books</string>
+    <string name="clothing">Clothing</string>
+    <string name="organic_foods">Organic Drinks</string>
+    <string name="medicines">Medicines</string>
+</resources>
