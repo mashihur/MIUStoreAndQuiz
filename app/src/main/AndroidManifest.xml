@@ -12,6 +12,9 @@
         android:theme="@style/Theme.MIUStoreAndQuiz"
         tools:targetApi="31">
         <activity
+            android:name=".activity.BookListActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.DrinksDetailActivity"
             android:exported="false" />
         <activity

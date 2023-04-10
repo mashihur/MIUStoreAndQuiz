@@ -16,6 +16,8 @@ class ShoppingCategoryActivity : AppCompatActivity() {
 
         binding.ivBooks.setOnClickListener {
             // Move to books screen
+            var bookListIntent = Intent(this, BookListActivity::class.java)
+            startActivity(bookListIntent)
         }
 
         binding.ivOrganic.setOnClickListener {
