@@ -1,5 +1,6 @@
 package com.example.miustoreandquiz.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.miustoreandquiz.R
@@ -19,6 +20,7 @@ class ShoppingCategoryActivity : AppCompatActivity() {
 
         binding.ivOrganic.setOnClickListener {
             // Move to drinks screen
+            startActivity(Intent(this, DrinksActivity::class.java))
         }
     }
 }
