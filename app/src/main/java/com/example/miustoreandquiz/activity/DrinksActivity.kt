@@ -25,15 +25,7 @@ class DrinksActivity : AppCompatActivity() {
         binding = ActivityDrinksBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var products = ArrayList<Product>()
-        val arrImages = resources.getStringArray(R.array.bookTitles2Image);
-        val arrTitles = resources.getStringArray(R.array.bookTitles2);
-        val arrDetail = resources.getStringArray(R.array.bookTitles2Details);
-        val arrPrice = resources.getStringArray(R.array.bookTitles2Price);
-        for (i in arrImages.indices) {
-            products.add(Product(arrTitles[i], arrPrice[i], arrImages[i], arrDetail[i]))
-        }
-
+        val products = intent.getSerializableExtra("products") as List<Product>
 
         binding.rv.layoutManager = LinearLayoutManager(this)
         // Create an object for the MyAdapter
@@ -43,7 +35,7 @@ class DrinksActivity : AppCompatActivity() {
 
     }
 
-    class MyAdapter(var context: Context, var products : ArrayList<Product>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
+    class MyAdapter(var context: Context, var products : List<Product>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyAdapter.MyViewHolder {
             val v = LayoutInflater.from(parent?.context).inflate(R.layout.card_layout_item, parent, false)
             return MyViewHolder(v);
