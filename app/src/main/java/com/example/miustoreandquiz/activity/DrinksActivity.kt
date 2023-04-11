@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.miustoreandquiz.R
 import com.example.miustoreandquiz.databinding.ActivityDrinksBinding
+import com.example.miustoreandquiz.helper.Constants
 import com.example.miustoreandquiz.helper.Product
 
 class DrinksActivity : AppCompatActivity() {
@@ -50,12 +51,12 @@ class DrinksActivity : AppCompatActivity() {
             // Implement the click Listener in the using the layout.
             holder.rlayout.setOnClickListener{
                 // User clicks the list Item to open the DetailActivity
-                val intent = Intent(context, DrinksDetailActivity::class.java)
+                val product = products[position]
 
+                val intent = Intent(context, DrinksDetailActivity::class.java)
                 // Pass data to the Detail Activity
-                intent.putExtra("image", imageId)
-                intent.putExtra("name", "${products[position].title} \n ${products[position].price}")
-                intent.putExtra("detail",products[position].desc)
+                intent.putExtra(Constants.INTENT_KEY2, imageId)
+                intent.putExtra(Constants.INTENT_KEY, product)
                 context.startActivity(intent)
             }
 

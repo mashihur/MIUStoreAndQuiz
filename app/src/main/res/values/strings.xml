@@ -21,7 +21,7 @@
     <string name="quiz_msg_submitted">Congratulations! You submitted on %s, Your achieved %s</string>
     <string name="OK">OK</string>
 
-    <string-array name="bookTitles">
+    <string-array name="book_titles">
         <item>Maharishi</item>
         <item>Dr Tony Nader</item>
         <item>Scientific Research Consiousness, knowledge and Enlightment</item>
@@ -31,33 +31,40 @@
         <item>Clearance</item>
     </string-array>
 
-    <string-array name="bookTitles2">
+    <string-array name="orgnic_products">
         <item>Organic Calm Tea</item>
         <item>Organic Energise Tea</item>
         <item>Worry free Tea</item>
         <item>Slumber Time tea</item>
     </string-array>
 
-    <string-array name="bookTitles2Image">
+    <string-array name="op_images">
         <item>image_calm</item>
         <item>image_energize</item>
         <item>image_worry</item>
         <item>image_slumber</item>
     </string-array>
 
-    <string-array name="bookTitles2Price">
+    <string-array name="op_prices">
         <item>$8.00</item>
         <item>$7.00</item>
         <item>$9.00</item>
         <item>$11.00</item>
     </string-array>
 
-    <string-array name="bookTitles2Details">
-        <item>Item ID#112\nWhen life gets hectic, a few sips of Organic Calm Vata Tea can help your body relax and your whirling mind settle down. Bring natural tranquility to your day and evening!
+    <string-array name="op_ids">
+        <item>Item ID#112</item>
+        <item>Item ID#113</item>
+        <item>Item ID#114</item>
+        <item>Item ID#115</item>
+    </string-array>
+
+    <string-array name="op_details">
+        <item>When life gets hectic, a few sips of Organic Calm Vata Tea can help your body relax and your whirling mind settle down. Bring natural tranquility to your day and evening!
         </item>
-        <item>Item ID#113\nSkip the coffee and try this delicious, stimulating herbal blend instead. The warm, peppery spices offer digestive support, and are sure to wake you up when you need it most!  </item>
-        <item>Item ID#114\nAshwagandha has many significant benefits, but is best known for its powerful adaptogenic properties, meaning that it helps mind and body adapt better to stress. It nourishes the nerves and improves nerve function to help you maintain calm during stressful situations.</item>
-        <item>Item ID#115\nAshwagandha is a powerful adaptogenic and helps stabilize the mind and emotions. Compostable, Double-Chamber Tea Bags. Eco-friendly compostable tea bag paper made from all-natural pulp, the double-chamber design provides more surface area for better water circulation and fuller flavor!</item>
+        <item>Skip the coffee and try this delicious, stimulating herbal blend instead. The warm, peppery spices offer digestive support, and are sure to wake you up when you need it most!  </item>
+        <item>Ashwagandha has many significant benefits, but is best known for its powerful adaptogenic properties, meaning that it helps mind and body adapt better to stress. It nourishes the nerves and improves nerve function to help you maintain calm during stressful situations.</item>
+        <item>Ashwagandha is a powerful adaptogenic and helps stabilize the mind and emotions. Compostable, Double-Chamber Tea Bags. Eco-friendly compostable tea bag paper made from all-natural pulp, the double-chamber design provides more surface area for better water circulation and fuller flavor!</item>
     </string-array>
 
 </resources>

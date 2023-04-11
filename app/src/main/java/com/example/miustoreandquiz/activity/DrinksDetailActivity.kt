@@ -3,6 +3,8 @@ package com.example.miustoreandquiz.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.miustoreandquiz.databinding.ActivityDrinksDetailBinding
+import com.example.miustoreandquiz.helper.Constants
+import com.example.miustoreandquiz.helper.Product
 
 class DrinksDetailActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDrinksDetailBinding
@@ -13,13 +15,11 @@ class DrinksDetailActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        if (intent.hasExtra("image") && intent.hasExtra("name") && intent.hasExtra("detail")) {
-            var ig = intent.getIntExtra("image", 0)
-            var t1 = intent.getStringExtra("name")
-            var t2 = intent.getStringExtra("detail")
-            binding.name.text = t1.toString()
-            binding.desc.text = t2.toString()
-            binding.imageView.setImageResource(ig)
+        if (intent.hasExtra(Constants.INTENT_KEY) && intent.hasExtra(Constants.INTENT_KEY2)) {
+            val product = intent.getSerializableExtra(Constants.INTENT_KEY) as Product
+            binding.name.text = product.title + "\n" + "Price: " + product.price + "\n" + product.id
+            binding.desc.text = product.desc
+            binding.imageView.setImageResource(intent.getIntExtra(Constants.INTENT_KEY2, 0))
         }
     }
 }

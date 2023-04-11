@@ -24,12 +24,13 @@ class ShoppingCategoryActivity : AppCompatActivity() {
         binding.ivOrganic.setOnClickListener {
             // Move to drinks screen
             var products = ArrayList<Product>()
-            val arrImages = resources.getStringArray(R.array.bookTitles2Image);
-            val arrTitles = resources.getStringArray(R.array.bookTitles2);
-            val arrDetail = resources.getStringArray(R.array.bookTitles2Details);
-            val arrPrice = resources.getStringArray(R.array.bookTitles2Price);
+            val arrImages = resources.getStringArray(R.array.op_images);
+            val arrTitles = resources.getStringArray(R.array.orgnic_products);
+            val arrDetail = resources.getStringArray(R.array.op_details);
+            val arrPrice = resources.getStringArray(R.array.op_prices);
+            val arrIds = resources.getStringArray(R.array.op_ids)
             for (i in arrImages.indices) {
-                products.add(Product(arrTitles[i], arrPrice[i], arrImages[i], arrDetail[i]))
+                products.add(Product(arrTitles[i], arrIds[i], arrPrice[i], arrImages[i], arrDetail[i]))
             }
             val intent = Intent(this, DrinksActivity::class.java)
             intent.putExtra("products", products as java.io.Serializable)
