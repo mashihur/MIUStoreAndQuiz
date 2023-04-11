@@ -15,7 +15,7 @@ class BookListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityBookListBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.bookList.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, resources.getStringArray(R.array.bookTitles))
+        binding.bookList.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, resources.getStringArray(R.array.bookTitles))
         binding.bookList.setOnItemClickListener { parent, view, position, id ->
             Toast.makeText(this, parent.getItemAtPosition(position).toString(), Toast.LENGTH_SHORT).show()
         }
